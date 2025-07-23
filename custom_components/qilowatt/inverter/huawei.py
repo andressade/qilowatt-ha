@@ -139,10 +139,10 @@ class HuaweiInverter(BaseInverter):
         load_current = [0.0, 0.0, 0.0]  # As per payload
 
         # Battery metrics
-        battery_power = [self.get_state_float("battery_charge_discharge_power")]
-        battery_current = [self.get_state_float("battery_bus_current")]
-        battery_voltage = [self.get_state_float("battery_bus_voltage")]
-        battery_soc = self.get_state_int("battery_state_of_capacity")
+        battery_power = [self.get_state_float("charge_discharge_power")]
+        battery_current = [self.get_state_float("bus_current")]
+        battery_voltage = [self.get_state_float("bus_voltage")]
+        battery_soc = self.get_state_int("state_of_capacity")
         battery_temperature = [self.get_state_float("battery_1_bms_temperature")]
 
         # Inverter metrics
